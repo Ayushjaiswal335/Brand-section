@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+                * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                }
+
+                .container {
+                        background-color: rgb(23, 136, 144);
+                        height: 80vh;
+                        width: 100vw;
+                        display: flex;
+                }
+
+                .left {
+
+                        height: 700px;
+                        width: 500px;
+                        border-radius: 8px;
+                        background-color: white;
+                        margin: 20px;
+                }
+
+                .left img {
+                        border-radius: 8px;
+                        margin: 22px;
+                        margin-bottom: 1px;
+                }
+
+                .deals {
+                        font-size: 22px;
+                        margin: 2px;
+                }
+
+                .name a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 21px;
+                }
+
+                .name {
+                        margin-left: 22px;
+                }
+
+                .left p {
+                        font-size: 24px;
+                        margin-left: 22px;
+                }
+
+                .new {
+                        font-size: 24px;
+                }
+
+                .product {
+                        /* display: grid;
+                        grid-template-columns: auto auto auto; */
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: center;
+                        justify-content: space-evenly;
+                }
+
+                .div1 {
+
+                        height: 300px;
+                        width: 300px;
+                        border-radius: 8px;
+                        background-color: white;
+                        margin: 20px;
+                }
+
+                .div1 img {
+                        border-radius: 8px;
+                        margin: 5px;
+                        margin-bottom: 0px;
+                }
+
+                .div1 a {
+                        text-decoration: none;
+                        color: black;
+                }
+
+                .aa {
+                        margin-left: 15px;
+                }
+
+                .div1 p {
+                        font-size: 20px;
+                        margin-left: 15px;
+                }
+
+                .div1,
+                .div2,
+                .div3,
+                .div4,
+                .div5,
+                .div6 {
+
+                        height: 300px;
+                        width: 300px;
+                        border-radius: 8px;
+                        background-color: white;
+                        margin: 20px;
+                }
+
+                .div1 img {
+                        border-radius: 8px;
+                        margin: 5px;
+                        margin-bottom: 0px;
+                }
+
+                .div1 a {
+                        text-decoration: none;
+                        color: black;
+                }
+
+                .aa {
+                        margin-left: 15px;
+                }
+
+                .div1 p {
+                        font-size: 20px;
+                        margin-left: 15px;
+                }
+
+                .div2 img {
+                        border-radius: 8px;
+                        margin: 5px;
+                        margin-bottom: 0px;
+                }
+
+                .div2 a {
+                        text-decoration: none;
+                        color: black;
+                }
+
+                .bb {
+                        margin-left: 15px;
+                }
+
+                .div2 p {
+                        font-size: 20px;
+                        margin-left: 15px;
+                }
+
+                .div3 img {
+                        border-radius: 8px;
+                        margin: 5px;
+                        margin-bottom: 0px;
+                }
+
+                .div3 a {
+                        text-decoration: none;
+                        color: black;
+                }
+
+                .cc {
+                        margin-left: 15px;
+                }
+
+                .div3 p {
+                        font-size: 20px;
+                        margin-left: 15px;
+                }
+
+                .div4 img {
+                        border-radius: 8px;
+                        margin: 5px;
+                        margin-bottom: 0px;
+                }
+
+                .div4 a {
+                        text-decoration: none;
+                        color: black;
+                }
+
+                .dd {
+                        margin-left: 15px;
+                }
+
+                .div4 p {
+                        font-size: 20px;
+                        margin-left: 15px;
+                }
+
+                .div5 img {
+                        border-radius: 8px;
+                        margin: 5px;
+                        margin-bottom: 0px;
+                }
+
+                .div5 a {
+                        text-decoration: none;
+                        color: black;
+                }
+
+                .ee {
+                        margin-left: 15px;
+                }
+
+                .div5 p {
+                        font-size: 20px;
+                        margin-left: 15px;
+                }
+
+                .div6 img {
+                        border-radius: 8px;
+                        margin: 5px;
+                        margin-bottom: 0px;
+                }
+
+                .div6 a {
+                        text-decoration: none;
+                        color: black;
+                }
+
+                .ff {
+                        margin-left: 15px;
+                }
+
+                .div6 p {
+                        font-size: 20px;
+                        margin-left: 15px;
+                }
+
+                /* .div1{
+                        background-image: url(abc.jpg);
+                        background-size: 253px;
+                        background-repeat: no-repeat;
+                        background-position: 24px 16px;;
+                } */
+                .main {
+                        background-color: aquamarine;
+                        height: 50vh;
+                        width: 100vw;
+                        /* display: flex;   */
+                }
+
+                .container1 {
+                        display: flex;
+                        justify-content: space-around;
+                }
+
+                .h {
+                        font-size: 25px;
+                        margin: 5px;
+                }
+
+                .l {
+                        display: grid;
+                        justify-content: center;
+                        grid-template-columns: auto auto auto;
+                        grid-gap: 25px 50px;
+                }
+
+                .r {
+                        background-color: white;
+                        height: 300px;
+                        width: 500px;
+                        border-radius: 8px;
+                }
+
+                .con1,
+                .con2,
+                .con3,
+                .con4,
+                .con5,
+                .con6,
+                .con7,
+                .con8 {
+                        height: 50px;
+                        width: 150px;
+                        background-color: white;
+                        border: 2px solid black;
+                        border-radius: 8px;
+                        text-align: center;
+
+                }
+
+                a {
+                        text-decoration: none;
+                        color: black;
+                }
+        </style>
+</head>
+
+<body>
+        <div class="main">
+                <div class="h">
+                        <h1>Top Brand</h1>
+                </div>
+                <div class="container1">
+                        <div class="l">
+                                <div class="con1"><a href="#">
+                                                <h1>brand1</h1>
+                                        </a></div>
+                                <div class="con2"><a href="#">
+                                                <h1>brand2</h1>
+                                        </a></div>
+                                <div class="con3"><a href="#">
+                                                <h1>brand3</h1>
+                                        </a></div>
+                                <div class="con4"><a href="#">
+                                                <h1>brand4</h1>
+                                        </a></div>
+                                <div class="con5"><a href="#">
+                                                <h1>brand5</h1>
+                                        </a></div>
+                                <div class="con6"><a href="#">
+                                                <h1>brand6</h1>
+                                        </a></div>
+                                <div class="con7"><a href="#">
+                                                <h1>brand7</h1>
+                                        </a></div>
+                                <div class="con8"><a href="#">
+                                                <h1>brand8</h1>
+                                        </a></div>
+                        </div>
+                        <div class="r"></div>
+                </div>
+        </div>
+        <div class="container">
+                <div class="left">
+                        <div class="deals">
+                                <h1>HOT DEALS</h1>
+                                <hr>
+                        </div>
+                        <img src="abc.jpg" alt="image" height="300px" width="450px">
+                        <div class="name"><a href="#">
+                                        <h1>Product-Name</h1>
+                                </a></div>
+                        <p><strong>Price:</strong>123456</p>
+                </div>
+                <div class="right">
+                        <div class="new">
+                                <h1>New-Product</h1>
+                        </div>
+                        <div class="product">
+                                <div class="div1">
+                                        <img src="abc.jpg" alt="a" height="200px" width="290px">
+                                        <div class="aa">
+                                                <a href="#">
+                                                        <h1>product name</h1>
+                                                </a>
+                                        </div>
+                                        <p><strong>Price:</strong>123456</p>
+                                </div>
+                                <div class="div2">
+                                        <img src="abc.jpg" alt="a" height="200px" width="290px">
+                                        <div class="bb">
+                                                <a href="#">
+                                                        <h1>product name</h1>
+                                                </a>
+                                        </div>
+                                        <p><strong>Price:</strong>123456</p>
+                                </div>
+                                <div class="div3">
+                                        <img src="abc.jpg" alt="a" height="200px" width="290px">
+                                        <div class="cc">
+                                                <a href="#">
+                                                        <h1>product name</h1>
+                                                </a>
+                                        </div>
+                                        <p><strong>Price:</strong>123456</p>
+                                </div>
+                                <div class="div4">
+                                        <img src="abc.jpg" alt="a" height="200px" width="290px">
+                                        <div class="dd">
+                                                <a href="#">
+                                                        <h1>product name</h1>
+                                                </a>
+                                        </div>
+                                        <p><strong>Price:</strong>123456</p>
+                                </div>
+                                <div class="div5">
+                                        <img src="abc.jpg" alt="a" height="200px" width="290px">
+                                        <div class="ee">
+                                                <a href="#">
+                                                        <h1>product name</h1>
+                                                </a>
+                                        </div>
+                                        <p><strong>Price:</strong>123456</p>
+                                </div>
+                                <div class="div6">
+                                        <img src="abc.jpg" alt="a" height="200px" width="290px">
+                                        <div class="ff">
+                                                <a href="#">
+                                                        <h1>product name</h1>
+                                                </a>
+                                        </div>
+                                        <p><strong>Price:</strong>123456</p>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</body>
+
+</html>
